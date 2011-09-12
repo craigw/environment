@@ -4,7 +4,9 @@ node default {
   include ssh
   include gnupg
   include git
+  include ruby
   include vim
+  include curl
   include gnome
   include dotfiles
 }

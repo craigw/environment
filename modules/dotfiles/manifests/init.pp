@@ -6,4 +6,5 @@ class dotfiles {
   include dotfiles::top
   include dotfiles::git
   include dotfiles::aliases
+  include dotfiles::prompt
 }
