@@ -8,5 +8,6 @@ node default {
   include vim
   include curl
   include gnome
+  include virtualbox
   include dotfiles
 }
