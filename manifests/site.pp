@@ -9,5 +9,7 @@ node default {
   include curl
   include gnome
   include virtualbox
+  include firefox
+  include thunderbird
   include dotfiles
 }
