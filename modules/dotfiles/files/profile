@@ -1,0 +1,3 @@
+for I in `ls $HOME/.profile.d/*`; do
+  [ -f ~/.$I ] && . ~/.$I
+done

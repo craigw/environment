@@ -1,0 +1,20 @@
+alias g='git'
+alias gs='git status'
+alias gc='git commit'
+alias gca='git commit -a'
+alias ga='git add'
+alias gco='git checkout'
+alias gb='git branch'
+alias gm='git merge'
+alias gd="git diff"
+
+alias b="bundle"
+alias be="b exec"
+alias r='be rake'
+alias m='r db:migrate'
+alias s='be script/server'
+alias c='be script/console'
+alias v='be vagrant'
+alias cu='be cucumber'
+
+alias e='vim .'

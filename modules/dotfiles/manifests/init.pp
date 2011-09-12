@@ -4,4 +4,6 @@ class dotfiles {
  # include dotfiles::ssh
  # include dotfiles::completion
   include dotfiles::top
+  include dotfiles::git
+  include dotfiles::aliases
 }
