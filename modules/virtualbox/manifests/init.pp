@@ -8,6 +8,7 @@ class virtualbox {
   exec { 'download virtualbox package':
     command => '/usr/bin/curl  "http://download.virtualbox.org/virtualbox/4.1.2/virtualbox-4.1_4.1.2-73507~Ubuntu~natty_amd64.deb" -LOq',
     creates => '/tmp/virtualbox-4.1_4.1.2-73507~Ubuntu~natty_amd64.deb',
+    unless => '/usr/bin/test -d /usr/lib/virtualbox',
     cwd => '/tmp',
     require => Package['curl']
   }

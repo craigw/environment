@@ -90,6 +90,7 @@ class ruby {
 
   exec { 'make ruby-1.9.2-p180 the system default':
     command => '/usr/local/rvm/bin/rvm --default ruby-1.9.2-p180',
+    require => Exec['install ruby-1.9.2-p180'],
     unless => '/usr/bin/test "`/bin/readlink -f /usr/local/rvm/rubies/default`" = "/usr/local/rvm/rubies/ruby-1.9.2-p180"'
   }
 }
